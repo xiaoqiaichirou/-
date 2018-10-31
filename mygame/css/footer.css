@@ -1,0 +1,159 @@
+
+@charset "utf-8";
+.clear:after{
+	content: '';
+	display: block;
+	height: 0;
+	clear: both;
+}
+.footer_box{
+	width: 100%;
+	min-width: 1200px;
+	background-color: #272727;
+	padding-top: 64px;
+}
+.footer{
+	width: 1200px;
+	margin: 0 auto;
+}
+.footer_list{
+	overflow: hidden;
+	padding-bottom: 72px;
+}
+.footer_list ul{
+	float: left;
+	padding: 0 7px;
+	width: 174px;
+}
+.footer_list ul:last-child{
+	float: right;
+	text-align: right;
+}
+.footer_list li{
+	font-size: 12px;
+	line-height: 34px;
+	color: #919699;
+	transition: all .5s;
+}
+.footer_list li:first-child{
+	color: #fff;
+	margin-bottom: 10px;
+	line-height: 17px;
+	cursor: pointer;
+}
+.footer_list_left li:hover{
+	color: #fff;
+	cursor: pointer;
+}
+.footer_list_right div{
+	overflow: hidden;
+	color: #919699;
+	height: 28px;
+	margin-top: 3px;
+}
+.footer_list_right input{
+	font-size: 12px;
+	width: 140px;
+	height: 28px;
+	color: #919699;
+	border: 1px solid #616466;
+	border-right: none;
+	padding: 3px;
+	box-sizing: border-box;
+	float: right;
+	background-color: transparent;
+	outline: none;
+}
+.footer_list_right button{
+	width: 27px;
+	height: 28px;
+	font-size: 12px;
+	outline: none;
+	float: right;
+	border: none;
+	color: #919699;
+	cursor: pointer;
+	transition: all .5s;
+	background-color: #616466;
+}
+.footer_list_right button:hover{
+	color: #5fff56;
+}
+.footer_about{
+	width: 100%;
+	color: #fff;
+	font-size: 12px;
+	line-height: 12px;
+	padding-bottom: 16px;
+	border-bottom:1px solid #616466;
+}
+.footer_logo,.footer_nav,.footer_nav li,.footer_social li{
+	float: left;
+}
+.footer_logo{
+	padding-top: 4px;
+}
+.footer_logo img{
+	display: block;
+	width: 30px;
+	margin-right: 16px;
+}
+.footer_nav li{
+	cursor: pointer;
+	padding: 6px 16px 4px;
+	transition: color .5s;
+}
+.footer_social{
+	float: right;
+}
+.footer_social li{
+	width: 20px;
+	padding-left: 18px;
+	cursor: pointer;
+	position: relative;
+}
+.footer_social li:first-child{
+	width: 36px;
+}
+.footer_social img{
+	width: 100%;
+}
+.footer_social .QRCode{
+	opacity: 0;
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top: -160px;
+	right: 0;
+	transition: opacity .3s linear .2s;
+}
+.footer_social li:nth-child(3):hover .QRCode{
+	opacity: 1;
+}
+.footer_bottom{
+	color: #616466;
+	font-size: 12px;
+	padding: 16px 0 32px;
+}
+.footer-legal p{
+	float: left;
+	line-height: 25px;
+}
+.footer-legal p:last-child{
+	float:right;
+	padding-left: 24px;
+	background:url('http://www5.djicdn.com/assets/images/v3/foot/locale-6fd559fc8d876b31bfb4eb32bad3bf6f.svg') left center no-repeat;
+}
+.footer_ad{
+	line-height: 17px;
+}
+.top{
+	width: 29px;
+	height: 65px;
+	position: fixed;
+	cursor: pointer;
+	right: 30px;
+	display: none;
+	bottom: 50px;
+	background:url(../img/top.gif);
+}

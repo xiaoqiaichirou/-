@@ -1,0 +1,238 @@
+@charset "utf-8";
+.clear:after{
+	content: '';
+	display: block;
+	height: 0;
+	clear: both;
+}
+.nav_header_box{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	transition: all .3s;
+	z-index: 99;
+}
+.nav_header{
+	width: 1200px;
+	margin: 0 auto;
+}
+.logo{
+	margin: 0;
+	padding:19px 39px 19px 0;
+	float: left;
+	cursor: pointer;
+}
+.logo i{
+	display: block;
+	width: 45px;
+	height: 26px;
+	transition: all .5s;
+	background: url(https://www2.djicdn.com/assets/images/v3/logo-black2-145dcb13c56f36a65d084180a42136fa.svg);
+}
+.nav_list{
+	float: left;
+}
+.nav_list_ul{
+	float: left;
+}
+.nav_list_ul>li{
+	float: left;
+	width: 102px;
+	height: 64px;
+	position: relative;
+	text-align: center;
+}
+.nav_list_ul>li:hover a{
+	border-bottom:1px solid #000;
+}
+.nav_list_down{
+	width: 130px;
+	position: absolute;
+	top: 64px;
+	left: -20px;
+	padding-top: 0;
+	opacity: 0;
+	height: 0;
+	overflow: hidden;
+	transition: all .3s;
+}
+.nav_list_down li{
+	box-sizing: border-box;
+	text-align: center;
+	padding: 16px 32px;
+	font-size: 12px;
+	line-height: 12px;
+	color: #303233;
+	transition: all .3s;
+	background-color: #fff;
+}
+.nav_list_down li:hover{
+	background-color: #ebeff2;
+}
+.nav_list_ul>li:hover .nav_list_down{
+	opacity: 1;
+	height: 380px;
+	padding-top: 10px;
+}
+.nav_list_ul li a{
+	display: block;
+	color: #000;
+	padding: 25px 16px 24px;
+	font-size: 14px;
+	line-height: 14px;
+	font-weight: bold;
+	transition: color .3s;
+}
+.nav_header_right{
+	float: right;
+	overflow: hidden;
+}
+.nav_header_right i{
+	display: block;
+	width: 24px;
+	height: 24px;
+	float: left;
+	margin: 20px 12px;
+	cursor: pointer;
+	transition: all .5s;
+	background: url(../img/secB.png) no-repeat;
+}
+.nav_header_right i:nth-child(3){
+	background: url(../img/userB.png) 2px 2px/20px 20px no-repeat;
+}
+.nav_header_right button{
+	display: block;
+	float: left;
+	font-size: 14px;
+	line-height: 14px;
+	border: none;
+	color: #fff;
+	width: 60px;
+	height: 30px;
+	background-color:#1897f2;
+	cursor: pointer;
+	margin: 17px 20px;
+	border-radius: 3px;
+}
+.nav_header_right button:hover{
+	background-color:#1e9df7;
+}
+.nav_bom_box{
+	width: 100%;
+	position: absolute;
+	top: 64px;
+	display: none;
+	overflow: hidden;
+	border-top: 1px solid #dae1e6;
+	z-index:999;
+}
+.sort{
+	width: 100%;
+	display: none;
+	background-color:#ebeff2;
+}
+.sort_list_ul{
+	width: 1200px;
+	margin: 0 auto;
+}
+.sort_list_ul li{
+	float: left;
+	padding: 28px 0;
+	width: 200px;
+	box-sizing: border-box;
+	border-left: 1px solid #dae1e6;
+}
+.sort_list_ul li:last-child{
+	border-right: 1px solid #dae1e6;
+}
+.sort_list_ul li a,.sort_list_ul li span{
+	display: block;
+	padding: 12px 0;
+	color: #303233;
+	position: relative;
+	left: -1px;
+	font-size: 16px;
+	font-weight: bold;
+	transition: all .3s;
+	cursor: pointer;
+}
+.sort_list_ul li a{
+	border-left: 3px solid #c2c8cc;
+	padding-left: 25px;
+}
+.sort_list_ul li span{
+	text-align: center;
+	padding-left: 20px;
+	background: url(../img/f1.png) 41px 13px/14px 14px no-repeat;
+}
+.nav_columns_box{
+	width: 100%;
+	background-color:#fff;
+	padding-top: 32px;
+}
+.columns_list{
+	width: 1200px;
+	margin: 0 auto;
+	border-bottom:1px solid #dae1e6;
+}
+.columns_list_ul{
+	width: 100%;
+}
+.columns_list_li1{
+	width: 240px;
+	float: left;
+	color: #303233;
+	font-size: 14px;
+	padding-bottom: 16px;
+}
+.columns_list_li1 h4{
+	margin-bottom: 8px;
+	font-weight: bold;
+}
+.columns_list_li1 h5{
+	margin-bottom: 16px;
+	font-size: 12px;
+	height: 28px;
+	line-height: 14px;
+}
+.columns_list_li1 .li_img{
+	width: 220px;
+	height: 120px;
+	margin-bottom: 16px;
+}
+.columns_list_li1 .li_img img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.columns_list_li1 p{
+	line-height: 14px;
+	font-size: 14px;
+	margin-bottom: 16px;
+	transition: color .3s;
+	cursor: pointer;
+}
+.nav_button{
+	width: 1200px;
+	margin: 0 auto;
+	padding: 24px 0 32px;
+}
+.nav_button button{
+	display: block;
+	float: left;
+	background-image:linear-gradient(-180deg,#e4ecf2 0%,#c0c7cc 96%);
+	margin-right: 16px;
+	color: #303233;
+	font-size: 16px;
+	padding: 15px 32px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+.nav_button button span{
+	padding-left: 24px;
+	background: url(../img/cc.png) left center/14px 14px no-repeat;
+}
+.nav_button button:hover{
+	background-image:linear-gradient(0deg,#e4ecf2 0%,#c0c7cc 96%);
+}

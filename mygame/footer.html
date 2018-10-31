@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script type="text/javascript">
+		$(function(){
+			var reg = /^[\w-]+(\.[\w-]+)*@[\w-]+(\.[\w-]+)+$/;
+			$('.footer_list_right button').click(function(){
+				var footerBol = reg.test($('.footer_list_right input').val())
+				if(footerBol){
+					$('.footer_tip').html('');
+				}else{
+					$('.footer_tip').html('请输入正确的邮箱地址');
+				}
+			});
+			var si = true;
+			$('.footer_nav li').hover(function(){
+				$(this).css('color','#fff').siblings().css('color','#919699');
+			},function(){
+				$('.footer_nav li').css('color','#fff');
+			})
+			$('.top').click(function(){
+				si = false;
+				$('.top').animate({
+					'bottom' : '1500px'
+				},500,'easeInExpo');
+				$('html,body').animate({
+					scrollTop : 0
+				},500,function(){
+					si = true;
+				});
+			});
+			$(window).scroll(function(){
+				if(si){
+					if($(window).scrollTop() > 500){
+						$('.top').css('bottom', '50px').fadeIn();
+					}else{
+						$('.top').fadeOut();
+					}
+				}
+			})
+		})
+	</script>
+	<!-- <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="css/common.css"> -->
+	<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+</head>
+<body>
+	<div class="footer_box">
+		<div class="footer">
+			<div class="footer_list">
+				<ul class="footer_list_left">
+					<li>热门产品分类</li>
+					<li>消费级</li>
+					<li>专业级</li>
+					<li>行业级</li>
+					<li>系统模块</li>
+				</ul>
+				<ul class="footer_list_left">
+					<li>购买渠道</li>
+					<li>官方商城</li>
+					<li>官方旗舰店</li>
+					<li>官方直营店</li>
+					<li>线下零售店</li>
+					<li>成为授权经销商</li>
+					<li>教育折扣</li>
+					<li>企业采购</li>
+				</ul>
+				<ul class="footer_list_left">
+					<li>帮助与支持</li>
+					<li>安全飞行指引</li>
+					<li>产品支持</li>
+					<li>维修中心</li>
+					<li>购买指南</li>
+					<li>售后服务政策</li>
+				</ul>
+				<ul class="footer_list_left">
+					<li>探索精彩大疆</li>
+					<li>新闻中心</li>
+					<li>精彩视频</li>
+					<li>精彩活动</li>
+					<li>大疆公益</li>
+					<li>STEAM教育</li>
+				</ul>
+				<ul class="footer_list_left">
+					<li>社区</li>
+					<li>天空之城</li>
+					<li>大疆社区</li>
+					<li>开发者</li>
+				</ul>
+				<ul class="footer_list_right">
+					<li>订阅我们</li>
+					<li>第一时间获得大疆的最新动态</li>
+					<li>
+						<div>
+							<button>
+								<i class="fa fa-chevron-right" aria-hidden="true"></i>
+							</button>
+							<input type="text" placeholder="请输入您的邮箱地址">
+						</div>
+					</li>
+					<li class="footer_tip"></li>
+				</ul>
+			</div>
+			<div class="footer_about clear">
+				<div class="footer_logo">
+					<img src="http://www2.djicdn.com/assets/images/v3/logo-white-b41f40998f5c6b07e90e184fb34ed4bc.svg">
+				</div>
+				<ul class="footer_nav clear">
+					<li>关于我们</li>
+					<li>联系我们</li>
+					<li>招聘精英</li>
+					<li>市场合作</li>
+					<li>RoboMaster</li>
+					<li>大疆传媒</li>
+					<li>慧飞培训中心</li>
+				</ul>
+				<ul class="footer_social clear">
+					<li>
+						<img src="img/youku.png">
+					</li>
+					<li>
+						<img src="img/weibo.png">
+					</li>
+					<li>
+						<img src="img/weixin.png">
+						<div class="QRCode">
+							<img src="img/QRCode.jpg">
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="footer_bottom">
+				<div class="footer-legal clear">
+					<p>
+						Copyright &copy 2018 DJI 大疆创新 版权所有
+		隐私权政策   使用条款   疆湖名录   网站地图
+		网站问题反馈？点击这里
+					</p>
+					<p>
+						中国大陆 / 简体中文
+					</p>
+				</div>
+				<div class="footer_ad">
+					粤ICP备12022215号-11
+		本网站直接或间接向消费者推销商品或者服务的商业宣传均属于“广告”（包装及参数、售后保障等商品信息除外）
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="top"></div>
+</body>
+</html>
